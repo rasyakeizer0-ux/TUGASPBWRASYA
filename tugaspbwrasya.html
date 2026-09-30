@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil M RASYA KEIZER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    :root {
+      --bg: #000000;
+      --card: #2A211A;
+      --card-dark: #8e0a1e;
+      --accent: #A8957F;
+      --accent-hover: #ffffff;
+      --cta: 3#8d071b;
+      --text: #ffffff;
+      --muted: #c3cbee;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: var(--card);
+      padding: 32px 24px 48px;
+      text-align: center;
+    }
+
+    .foto {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      background: var(--card-dark);
+    }
+    h1 { font-size: 1.5rem; font-weight: 800; margin-top: 16px; letter-spacing: .5px; }
+    .bio { color: var(--muted); font-size: .95rem; margin: 4px 0 24px; }
+
+    .btn {
+      display: block;
+      padding: 14px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .2s, transform .2s, box-shadow .2s;
+    }
+    .btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, .3);
+    }
+    .btn:active { transform: translateY(0); }
+    .btn:focus-visible, .menu a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+    .btn.cta { background: var(--cta); }
+    .btn.cta:hover { background: #4b1e1e; }
+
+    .menu {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+      margin: 28px 0 8px;
+    }
+    .menu a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .85rem;
+      padding: 6px 14px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      transition: background .2s, color .2s;
+    }
+    .menu a:hover { background: var(--text); color: var(--bg); }
+
+    section {
+      text-align: left;
+      background: var(--card-dark);
+      border-left: 4px solid var(--cta);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    section h2 { font-size: 1.1rem; margin-bottom: 8px; }
+    section p, section li { color: var(--muted); font-size: .92rem; }
+    section ul { padding-left: 18px; }
+    section li { margin-bottom: 6px; }
+    section li strong { color: var(--text); }
+    section li:hover { color: var(--text); }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+    .skills li {
+      background: var(--accent);
+      color: var(--text);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin: 0;
+      transition: background .2s;
+    }
+    .skills li:hover { background: var(--cta); }
+
+    .contact a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+    .contact a:hover { color: var(--cta); }
+
+    .lagu { margin-top: 28px; font-weight: 800; }
+    .footer { margin-top: 28px; font-size: .8rem; color: var(--muted); }
+    a.top { color: var(--muted); font-size: .85rem; text-decoration: none; display: inline-block; margin-top: 16px; }
+    a.top:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <img class="foto" src="fotorasya.jpeg" alt="Foto profil M Rasya Keizer">
+    <h1>M RASYA KEIZER</h1>
+    <p class="bio">Suka gym | Suka renang | Suka main</p>
+
+    <a class="btn" href="https://github.com/rasyakeizer" target="_blank" rel="noopener">Github</a>
+    <a class="btn" href="https://id.linkedin.com/in/rasya-keizer-98a5b643b" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://www.instagram.com/rsyakeizer?stkn=MXI2MGs4b3Zrcm10bA==">Instagram</a>
+    <a class="btn cta" href="#contact">Mari connect</a>
+
+    <nav class="menu" aria-label="Bagian halaman">
+      <a href="#about">About Me</a>
+      <a href="#experience">Experience</a>
+      <a href="#organization">Organization</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <h2>Tentang saya</h2>
+      <p>Halo nama saya rasya, saya adalah mahasiswa d3 manajemen informatika di fakultas mipa, universitas lampung. saya berasal dari kotabumi, lampung utara</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>berpengalaman jatuh dari motor</strong> – retak tulang sedikit</li>
+        <li><strong>Hidup</strong> – pengalaman hidup saya baru sedikit</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Kemampuan saya</h2>
+      <ul class="skills">
+        <li>benerin motor</li>
+        <li>c++</li>
+        <li>java</li>
+        <li>figma</li>
+        <li>canva</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontak saya</h2>
+      <p>Email: <a href="mailto:rasyakeizer0@gmail.com">rasyakeizer0@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/rsyakeizer?stkn=MXI2MGs4b3Zrcm10bA==" target="_blank" rel="noopener">@rsyakeizer</a></p>
+    </section>
+    <a class="top" href="#top" onclick="window.scrollTo({top:0});return false;">Kembali ke atas</a>
+
+  </main>
+</body>
+</html>
